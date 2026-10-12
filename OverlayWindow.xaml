@@ -1,0 +1,23 @@
+<Window x:Class="FuriXeus.Tuber.Native.OverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FuriXeus Critter Output"
+        Icon="Assets/FuriCore.ico"
+        Width="520" Height="620"
+        WindowStyle="None"
+        AllowsTransparency="False"
+        Background="#00FF00"
+        Topmost="True"
+        ShowInTaskbar="True"
+        ResizeMode="CanResizeWithGrip"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+  <Grid Background="#00FF00">
+    <Image x:Name="OutputImage" Stretch="Uniform" Margin="8" RenderOptions.BitmapScalingMode="HighQuality"/>
+    <Border x:Name="OverlayHint" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" CornerRadius="12" Background="#DD0C0B10" BorderBrush="#FFFF2D8B" BorderThickness="1" Padding="12,6" Opacity="0">
+      <TextBlock Text="OBS CAPTURE MODE • ADD CHROMA KEY: #00FF00" Foreground="#FFFFFF" FontFamily="Consolas" FontSize="10"/>
+    </Border>
+    <Border HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="16" Height="16" Margin="0,0,6,6" Opacity="0.55">
+      <Path Stroke="#FF0C0B10" StrokeThickness="2" Data="M 0 16 L 16 0 M 6 16 L 16 6 M 12 16 L 16 12"/>
+    </Border>
+  </Grid>
+</Window>

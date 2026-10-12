@@ -1,0 +1,150 @@
+{
+  "app": "FuriXeus Tuber",
+  "version": "0.7.3",
+  "profileName": "Chaos Critter / Native Core",
+  "settings": {
+    "defaultStateId": "idle",
+    "talkThresholdDb": -42.0,
+    "talkReleaseMs": 130,
+    "triggerLeadMs": 220,
+    "manualStateHoldMs": 2200,
+    "humAttackMs": 420,
+    "humReleaseHoldMs": 1400,
+    "yawnAttackMs": 1100,
+    "yawnReleaseHoldMs": 1800,
+    "laughReleaseHoldMs": 1400,
+    "voiceInputDeviceId": "",
+    "voiceInputDeviceName": "",
+    "eventInputDeviceId": "",
+    "eventInputDeviceName": "",
+    "characterSkinFolder": "",
+    "assetOverrides": {},
+    "setupCompleted": false,
+    "calibratedNoiseFloorDb": -60.0,
+    "trainingProfileName": "Default"
+  },
+  "states": [
+    {
+      "id": "idle",
+      "name": "Idle",
+      "idleAsset": "Assets/ChaosCritter/idle.png",
+      "talkAsset": "Assets/ChaosCritter/talk.png",
+      "triggerPhrases": [],
+      "priority": 0,
+      "holdMs": 0,
+      "accent": "pink"
+    },
+    {
+      "id": "thinking",
+      "name": "Thinking",
+      "idleAsset": "Assets/ChaosCritter/thinking_talk.png",
+      "talkAsset": "Assets/ChaosCritter/thinking.png",
+      "triggerPhrases": [
+        "thinking",
+        "let me think",
+        "hmm"
+      ],
+      "audioEvent": "hum",
+      "priority": 7,
+      "holdMs": 1800,
+      "accent": "orange"
+    },
+    {
+      "id": "deadpan",
+      "name": "Deadpan",
+      "idleAsset": "Assets/ChaosCritter/deadpan.png",
+      "talkAsset": "Assets/ChaosCritter/deadpan_talk.png",
+      "triggerPhrases": [
+        "bruh",
+        "brah",
+        "bro",
+        "seriously"
+      ],
+      "priority": 6,
+      "holdMs": 2400,
+      "accent": "pink"
+    },
+    {
+      "id": "shocked",
+      "name": "Shocked",
+      "idleAsset": "Assets/ChaosCritter/shocked.png",
+      "talkAsset": "Assets/ChaosCritter/shocked.png",
+      "triggerPhrases": [
+        "what",
+        "what the fuck",
+        "no way",
+        "wait what",
+        "nani",
+        "nanny",
+        "nonny",
+        "nah knee",
+        "na knee"
+      ],
+      "priority": 8,
+      "holdMs": 2400,
+      "accent": "orange"
+    },
+    {
+      "id": "hype",
+      "name": "Hype",
+      "idleAsset": "Assets/ChaosCritter/hype.png",
+      "talkAsset": "Assets/ChaosCritter/hype_talk.png",
+      "triggerPhrases": [
+        "let's go",
+        "lets go",
+        "hell yeah",
+        "fuck yeah"
+      ],
+      "priority": 9,
+      "holdMs": 3200,
+      "accent": "orange"
+    },
+    {
+      "id": "rage",
+      "name": "Rage",
+      "idleAsset": "Assets/ChaosCritter/rage.png",
+      "talkAsset": "Assets/ChaosCritter/rage_talk.png",
+      "triggerPhrases": [
+        "are you kidding",
+        "are you kidding me",
+        "rage",
+        "angry"
+      ],
+      "priority": 10,
+      "holdMs": 3600,
+      "accent": "pink"
+    },
+    {
+      "id": "sleepy",
+      "name": "Sleepy",
+      "idleAsset": "Assets/ChaosCritter/sleepy.png",
+      "talkAsset": "Assets/ChaosCritter/sleepy_talk.png",
+      "triggerPhrases": [
+        "i'm tired",
+        "im tired",
+        "sleepy",
+        "yawn"
+      ],
+      "audioEvent": "yawn",
+      "priority": 8,
+      "holdMs": 3000,
+      "accent": "pink"
+    },
+    {
+      "id": "laugh",
+      "name": "Laugh",
+      "idleAsset": "Assets/ChaosCritter/laugh.png",
+      "talkAsset": "Assets/ChaosCritter/laugh_talk.png",
+      "triggerPhrases": [
+        "haha",
+        "hahaha",
+        "that's funny",
+        "thats funny"
+      ],
+      "audioEvent": "laugh",
+      "priority": 7,
+      "holdMs": 2200,
+      "accent": "orange"
+    }
+  ]
+}
